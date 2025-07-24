@@ -1,43 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Media Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aipachino</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body { margin:0; background:#111; color:#eee; font-family:Arial,sans-serif; text-align:center; padding:2rem; }
-    iframe { margin:1.5rem 0; max-width:100%; }
-    h1 { font-size:2rem; }
-    h2 { font-size:1.2rem; margin-top:2rem; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+section {
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
   </style>
-</head>
-<body>
-  <h1>Welcome to Daniel's</h1>
-  <p> Recording Roundup!</p>
+</head><body>
+  <header>
+    <h1>Automatic Trading System</h1>
+    <h2>Algorithms Included, Brewed Just Right.</h2>
+  </header>  <section>
+    <div class="card">
+      <h3>Features</h3>
+      <ul>
+        <li>Supports stocks and crypto through your own Alpaca account</li>
+        <li>Automatically identifies trade opportunities</li>
+        <li>Risk-managed position sizing</li>
+        <li>Smart entry/exit logic with dynamic thresholds</li>
+        <li>Daily cycle with buy, monitor, and sell decisions</li>
+        <li>Price caching, volatility scoring, and momentum analysis</li>
+        <li>Works on low-power hardware like Raspberry Pi</li>
+        <li>Optional dashboards and logs available</li>
+      </ul>
+    </div><div class="card">
+  <h3>Plans</h3>
+  <ul>
+    <li><strong>Basic:</strong> One asset, limited trades/day, no dashboard — $30–50/month</li>
+    <li><strong>Standard:</strong> Multi-asset support, logs, reporting — $75–150/month</li>
+    <li><strong>Pro:</strong> Custom config, alerts, dashboard — $200–500/month</li>
+    <li><strong>Performance-Based:</strong> 20% of profit above your high-water mark</li>
+    <li><strong>One-Time Setup:</strong> $300–1,000 for custom deployment</li>
+    <li><strong>Hardware Option:</strong> Lease or buy a preconfigured Pi unit</li>
+  </ul>
+</div>
 
-  <h2>YouTube – lllslinklll (Latest Video)</h2>
-  <iframe width="560" height="315"
-    src="https://www.youtube-nocookie.com/embed/sinCenyqDGE"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-
-  <h2>SoundCloud – Slinky style (Latest Track)</h2>
-  <iframe width="100%" height="300"
-    scrolling="no" frameborder="no" allow="autoplay"
-    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fslinkystyle%2Fslinkystyle-ultraviolet&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-  </iframe>
-
-  
-  <h2>Twitch – Dani31 (Latest VOD)</h2>
-  <!-- Twitch Embed -->
-  <iframe
-    src="https://player.twitch.tv/?video=2468418468&parent=dheight.github.io"
-    height="480"
-    width="720"
-    allowfullscreen
-    frameborder="0">
-  </iframe>
-</body>
-</html>
+  </section>
+</body></html>
