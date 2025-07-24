@@ -1,121 +1,115 @@
-<<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aipachino Trading System</title>
+  <title>Aipachino – Algorithmic Trading System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
+      background-color: #f4f4f7;
+      color: #222;
     }
     header {
-      background-color: #1a1a2e;
-      color: white;
-      padding: 2rem 1rem;
+      background: #121212;
+      color: #fff;
+      padding: 2rem;
       text-align: center;
+    }
+    h1 {
+      font-size: 2.75rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #111;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
     }
     section {
       max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    h2 {
-      color: #1a1a2e;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
     }
-    .tier {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    .pricing-table th, .pricing-table td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
     }
-    .tier h3 {
-      margin-top: 0;
-    }
-    .note {
+    .tip {
       font-style: italic;
-      font-size: 0.9em;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Aipachino</h1>
-    <p>Algorithmic Trading System – Brewed Just Right</p>
-  </header>
-  <main>
-    <section>
-      <h2>What is Aipachino?</h2>
-      <p>Aipachino is a plug-and-play algorithmic trading system designed for self-directed traders who want their strategy to work while they don’t. “AI” in the name stands for <strong>Algorithms Included</strong>.</p>
-      <p>This platform is built to be installed and managed locally or hosted, offering flexibility for those who want more control over how their trades are executed. It includes logging, configurability, database tracking, and modular architecture.</p>
-    </section>
+    <p>Broker in a box. Brewed just right. Works while you don't.</p>
+  </header>  <section>
+    <h2>Recurring Subscription (SaaS-style)</h2>
+    <p><strong>Best for:</strong> Retail clients who want ongoing service.</p>
+    <table class="pricing-table">
+      <tr><th>Plan</th><th>Features</th><th>Monthly Price (USD)</th></tr>
+      <tr><td>Basic</td><td>One asset, limited trades/day, no dashboard</td><td>$30–50</td></tr>
+      <tr><td>Standard</td><td>Multi-asset support, logs, reporting</td><td>$75–150</td></tr>
+      <tr><td>Pro</td><td>Custom config, alerts, dashboard</td><td>$200–500</td></tr>
+    </table>
+    <p class="tip">Tip: Offer quarterly discounts (e.g., 3 months for 2.5x monthly rate).</p><h2>Performance-Based Fee (Profit Share)</h2>
+<p><strong>Best for:</strong> Clients with capital, willing to pay based on returns.</p>
+<p>20% of realized monthly profits, after crossing a “high water mark.”</p>
+<p>Example: If a $1,000 account grows to $1,150, your cut is 20% of the $150 gain = $30.</p>
+<p>If it later drops to $1,130, you don’t get paid again until profits exceed $1,150.</p>
+<p class="tip">Tip: Use Stripe, PayPal subscriptions, or crypto wallets to automate this.</p>
 
-    <section>
-      <h2>What makes it different?</h2>
-      <ul>
-        <li>Works with both stocks and crypto, adjusting dynamically to market hours</li>
-        <li>Volatility-aware scoring system for choosing trades</li>
-        <li>Dynamically tracks trade performance with intelligent take-profit/stop-loss logic</li>
-        <li>Runs on compact, low-power hardware like a Raspberry Pi</li>
-        <li>No external dependencies—self-contained execution</li>
-        <li>Fully headless operation with clear log and database transparency</li>
-      </ul>
-    </section>
+<h2>One-Time Setup Fee</h2>
+<p><strong>Best for:</strong> Clients who want to self-host or want a personal version.</p>
+<p>$300–1,000 flat depending on:</p>
+<ul>
+  <li>Hosting requirements</li>
+  <li>Custom strategy tuning</li>
+  <li>Hardware configuration</li>
+  <li>Documentation + training</li>
+</ul>
+<p class="tip">Includes 1-month support. Ongoing maintenance available (e.g., $50/month).</p>
 
-    <section>
-      <h2>Pricing</h2>
-      <div class="pricing-table">
-        <div class="price-box">
-          <h3>Self-Hosted Setup</h3>
-          <ul>
-            <li>📦 One-time setup: <strong>$125–$200</strong></li>
-            <li>💻 Customer provides hardware</li>
-            <li>⚙️ Remote installation and configuration</li>
-            <li>🔧 Limited to install/support, not trade performance</li>
-          </ul>
-        </div>
-        <div class="price-box">
-          <h3>Hosted Service</h3>
-          <ul>
-            <li>🔁 Recurring: <strong>$40–$75/month</strong></li>
-            <li>🔐 No account access required; user provides keys</li>
-            <li>⚙️ System monitored, auto-restart and logging included</li>
-            <li>🎯 Trade performance not guaranteed</li>
-          </ul>
-        </div>
-        <div class="price-box">
-          <h3>Profit Share Option</h3>
-          <ul>
-            <li>📈 You keep 80–90% of profits</li>
-            <li>🤝 Monthly performance reviews via logs</li>
-            <li>💵 Minimum $25/month floor</li>
-          </ul>
-        </div>
-        <div class="price-box">
-          <h3>Hardware Bundle</h3>
-          <ul>
-            <li>💡 Turnkey delivery: <strong>$250–$400</strong></li>
-            <li>📦 Includes configured Pi with system pre-installed</li>
-            <li>📡 Ship-to-run capability, ready to plug in</li>
-            <li>🧰 Includes install support and guidance</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<h2>Hardware Lease/Sale (If Provided)</h2>
+<p><strong>Best for:</strong> Plug-and-play packages</p>
+<table class="pricing-table">
+  <tr><th>Option</th><th>Fee</th></tr>
+  <tr><td>Lease Raspberry Pi setup</td><td>$20–40/month</td></tr>
+  <tr><td>Sell preconfigured device</td><td>$200–350/unit</td></tr>
+</table>
+<p class="tip">Add shipping, optional router config, UPS battery, etc. for extra value.</p>
 
-    <section>
-      <h2>Support Disclaimer</h2>
-      <p>Aipachino is a technical service. Support is limited to installation, configuration, and assistance running the system. We do not offer financial advice or performance guarantees. This is not a trading advisory platform. The user assumes all responsibility for trades executed using their brokerage account.</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Aipachino. All rights reserved.</p>
-  </footer>
+<h2>Add-on Services</h2>
+<table class="pricing-table">
+  <tr><th>Service</th><th>Rate</th></tr>
+  <tr><td>Backtest custom strategy</td><td>$50–100/run</td></tr>
+  <tr><td>Strategy customization</td><td>$100–500/project</td></tr>
+  <tr><td>Data hosting or dashboards</td><td>$15–50/month</td></tr>
+  <tr><td>Personal coaching or onboarding</td><td>$75–150/hour</td></tr>
+</table>
+
+
+
+  </section>  <div class="footer">
+    <p>&copy; 2025 Aipachino. All rights reserved.</p>
+  </div>
 </body>
 </html>
