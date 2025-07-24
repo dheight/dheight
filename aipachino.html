@@ -1,79 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aipachino Trading Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aipachino Trading System</title>
   <style>
     body {
-      font-family: sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
     }
-    h1, h2 {
-      color: #2e2e2e;
+    header {
+      background-color: #1a1a2e;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
     }
-    .pricing, .disclaimer {
-      background: #f4f4f4;
-      padding: 1rem;
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    h2 {
+      color: #1a1a2e;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .tier {
+      background-color: white;
+      border: 1px solid #ddd;
       border-radius: 10px;
-      margin: 2rem 0;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    .tagline {
+    .tier h3 {
+      margin-top: 0;
+    }
+    .note {
       font-style: italic;
-      color: #666;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <h1>Aipachino Trading Bot</h1>
-  <p class="tagline">"Brewed just right. Works while you don't. Broker in a box."</p>
+  <header>
+    <h1>Aipachino</h1>
+    <p>Algorithmic Trading System – Brewed Just Right</p>
+  </header>
+  <main>
+    <section>
+      <h2>What is Aipachino?</h2>
+      <p>Aipachino is a plug-and-play algorithmic trading system designed for self-directed traders who want their strategy to work while they don’t. “AI” in the name stands for <strong>Algorithms Included</strong>.</p>
+      <p>This platform is built to be installed and managed locally or hosted, offering flexibility for those who want more control over how their trades are executed. It includes logging, configurability, database tracking, and modular architecture.</p>
+    </section>
 
-  <p><strong>Aipachino</strong> is a modular, automated trading system built to help users run active trading strategies on supported broker platforms. Designed for crypto and stock markets, it provides high-speed decision logic, custom indicators, and full local control for the user.</p>
+    <section>
+      <h2>What makes it different?</h2>
+      <ul>
+        <li>Works with both stocks and crypto, adjusting dynamically to market hours</li>
+        <li>Volatility-aware scoring system for choosing trades</li>
+        <li>Dynamically tracks trade performance with intelligent take-profit/stop-loss logic</li>
+        <li>Runs on compact, low-power hardware like a Raspberry Pi</li>
+        <li>No external dependencies—self-contained execution</li>
+        <li>Fully headless operation with clear log and database transparency</li>
+      </ul>
+    </section>
 
-  <h2>Key Features</h2>
-  <ul>
-    <li>Runs on local or remote hardware</li>
-    <li>Compatible with Alpaca and other supported APIs</li>
-    <li>Fully automated buy/sell logic</li>
-    <li>Customizable indicators, thresholds, and symbols</li>
-    <li>Real-time logging and historical database</li>
-    <li>No third-party cloud services required</li>
-  </ul>
+    <section>
+      <h2>Pricing</h2>
+      <div class="pricing-table">
+        <div class="price-box">
+          <h3>Self-Hosted Setup</h3>
+          <ul>
+            <li>📦 One-time setup: <strong>$125–$200</strong></li>
+            <li>💻 Customer provides hardware</li>
+            <li>⚙️ Remote installation and configuration</li>
+            <li>🔧 Limited to install/support, not trade performance</li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <h3>Hosted Service</h3>
+          <ul>
+            <li>🔁 Recurring: <strong>$40–$75/month</strong></li>
+            <li>🔐 No account access required; user provides keys</li>
+            <li>⚙️ System monitored, auto-restart and logging included</li>
+            <li>🎯 Trade performance not guaranteed</li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <h3>Profit Share Option</h3>
+          <ul>
+            <li>📈 You keep 80–90% of profits</li>
+            <li>🤝 Monthly performance reviews via logs</li>
+            <li>💵 Minimum $25/month floor</li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <h3>Hardware Bundle</h3>
+          <ul>
+            <li>💡 Turnkey delivery: <strong>$250–$400</strong></li>
+            <li>📦 Includes configured Pi with system pre-installed</li>
+            <li>📡 Ship-to-run capability, ready to plug in</li>
+            <li>🧰 Includes install support and guidance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <div class="pricing">
-    <h2>Pricing Models</h2>
-    <h3>Non-Hosted (You run the bot yourself)</h3>
-    <ul>
-      <li><strong>One-Time Setup Fee:</strong> $100 – includes installation, config, and onboarding</li>
-      <li><strong>Monthly Maintenance:</strong> $25/month – includes updates, bugfixes, and remote check-ins</li>
-      <li><strong>Performance-Based Option:</strong> 10% of net realized profit (monthly, honor system)</li>
-    </ul>
-
-    <h3>Hosted (We run the bot for you)</h3>
-    <ul>
-      <li><strong>Setup & Onboarding:</strong> $150 one-time – includes full config and testing</li>
-      <li><strong>Hosting + Support:</strong> $50/month – includes uptime, logging access, and restarts</li>
-      <li><strong>Performance-Based Option:</strong> 20% of net realized profit (monthly, invoiced)</li>
-    </ul>
-
-    <p>Pricing tiers are flexible. You can mix-and-match flat fees and profit-sharing models based on your comfort and usage level.</p>
-  </div>
-
-  <h2>Access & Monitoring</h2>
-  <ul>
-    <li>You retain full ownership of your brokerage account and credentials</li>
-    <li>Secure logging, configuration, and status tracking provided</li>
-    <li>Monitoring tools available to verify activity and execution</li>
-  </ul>
-
-  <div class="disclaimer">
-    <h2>Support Scope</h2>
-    <p>Support is limited to installation, configuration, and running of the service. We do <strong>not</strong> offer financial advice, make investment decisions, or guarantee performance. All trading activity is the responsibility of the account owner.</p>
-  </div>
-
-  <p>To get started, request setup via the main site contact page.</p>
+    <section>
+      <h2>Support Disclaimer</h2>
+      <p>Aipachino is a technical service. Support is limited to installation, configuration, and assistance running the system. We do not offer financial advice or performance guarantees. This is not a trading advisory platform. The user assumes all responsibility for trades executed using their brokerage account.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Aipachino. All rights reserved.</p>
+  </footer>
 </body>
 </html>
