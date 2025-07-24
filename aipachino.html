@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aipachino - Algorithmic trading in a Box</title>
+  <title>Aipachino - Broker in a Box</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -36,16 +36,20 @@
       font-size: 1.8rem;
       margin-bottom: 1rem;
     }
-    .features-table {
+    .features-table, .pricing-table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
     }
-    .features-table th,
-    .features-table td {
+    .features-table th, .features-table td,
+    .pricing-table th, .pricing-table td {
       border: 1px solid #ddd;
       padding: 0.75rem;
       text-align: left;
+    }
+    ul.feature-list {
+      list-style-type: disc;
+      margin-left: 1.5rem;
     }
     .cta-buttons {
       text-align: center;
@@ -67,7 +71,6 @@
       padding: 2rem 1rem;
       font-size: 0.9rem;
     }
-    /* FAQ styles */
     .faq {
       max-width: 900px;
       margin: 2rem auto 4rem;
@@ -102,172 +105,144 @@
     .faq-answer.active {
       display: block;
     }
-    /* New features/pricing styles */
-    .pricing-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    .pricing-table th,
-    .pricing-table td {
-      border: 1px solid #ddd;
-      padding: 0.75rem;
-      text-align: left;
-    }
-    .monetization-list {
-      list-style-type: disc;
-      margin-left: 1.5rem;
-    }
   </style>
 </head>
 <body>
   <header>
     <h1>Aipachino</h1>
-    <p>Algorithmic trading in a box. Brewed just right. Works while you don't.</p>
+    <p>Broker in a Box. Brewed just right. Works while you don't.</p>
   </header>
 
   <section class="section">
     <h2>What is Aipachino?</h2>
-    <p>Aipachino is an algorithmic trading system that connects to your brokerage account and executes trades based on smart, tested strategies. Run it at home or let us host it for you. You stay in control of your funds while Aipachino works 24/7.</p>
+    <p>Aipachino is an algorithmic trading system that connects to your brokerage account and executes trades based on tested strategies. Run it at home or let us host it for you. You control the funds—Aipachino handles the work.</p>
   </section>
 
   <section class="section">
     <h2>Why Aipachino?</h2>
     <table class="features-table">
       <tr><th>Feature</th><th>Benefit</th></tr>
-      <tr><td>Self-hosted or Managed</td><td>Run it your way: fully independent or fully supported.</td></tr>
-      <tr><td>Connects to Your Account</td><td>We never touch your funds—just automate your trades.</td></tr>
-      <tr><td>Multi-Asset</td><td>Trade crypto and stocks with one system.</td></tr>
-      <tr><td>Snowballing Logic</td><td>Reinvest profits for compound returns.</td></tr>
-      <tr><td>Risk Protection</td><td>Built-in stop loss, profit-taking, and volatility filters.</td></tr>
+      <tr><td>Multi-Asset</td><td>Trade stocks and crypto from one dashboard.</td></tr>
+      <tr><td>Self-Hosted or Fully Managed</td><td>Choose your setup—run locally or let us host it for you.</td></tr>
+      <tr><td>Smart Strategy Engine</td><td>Automatically analyzes volatility, momentum, and price action.</td></tr>
+      <tr><td>Risk Controls</td><td>Stop-loss, profit-taking, cooldowns, volatility filters.</td></tr>
+      <tr><td>Compounding Logic</td><td>Reinvests gains to grow your portfolio.</td></tr>
     </table>
   </section>
 
   <section class="section">
-    <h2>Features</h2>
-    <ul>
-      <li>Easy connection to your Alpaca brokerage account with secure API key handling.</li>
-      <li>Supports both U.S. stock and cryptocurrency markets within Alpaca’s supported regions.</li>
-      <li>Dynamic portfolio rebalancing based on momentum, volatility, and profit targets.</li>
-      <li>Automated stop loss and take profit mechanisms to protect capital and lock in gains.</li>
-      <li>Snowball profit reinvestment for compounding growth over time.</li>
-      <li>Configurable strategy parameters for beginners and advanced users.</li>
-      <li>Real-time trade logging and performance tracking via dashboard (managed option).</li>
-      <li>Cross-platform deployment: run on your own hardware or use our fully managed cloud service.</li>
+    <h2>Included Features (All Plans)</h2>
+    <ul class="feature-list">
+      <li>Secure Alpaca integration (stocks + crypto)</li>
+      <li>Built-in risk management rules</li>
+      <li>Real-time trade execution engine</li>
+      <li>Basic configuration and presets</li>
+      <li>Automated position sizing</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Premium Features (Managed or Pro Plans)</h2>
+    <ul class="feature-list">
+      <li>Visual performance dashboard</li>
+      <li>Backtesting engine for historical strategy testing</li>
+      <li>Prebuilt strategy library (momentum, mean reversion, blended)</li>
+      <li>Customizable trade rules and filters</li>
+      <li>Multi-strategy execution per asset class</li>
+      <li>Smart alerts and daily performance summaries</li>
+      <li>Trade journal with tagging and notes</li>
+      <li>Priority support and onboarding</li>
     </ul>
   </section>
 
   <section class="section">
     <h2>Pricing</h2>
     <table class="pricing-table">
+      <tr><th>Plan</th><th>What's Included</th><th>Cost</th></tr>
       <tr>
-        <th>Plan</th>
-        <th>Details</th>
-        <th>Cost (USD)</th>
+        <td>Starter (Self-Hosted)</td>
+        <td>
+          Core trading engine<br>
+          Basic strategy<br>
+          Community support
+        </td>
+        <td>$150 one-time + $25/month</td>
       </tr>
       <tr>
-        <td>Self-Hosted</td>
-        <td>One-time setup fee + monthly subscription<br>Access to software and updates<br>User support included</td>
-        <td>$150 setup + $25/month</td>
+        <td>Managed</td>
+        <td>
+          Hosted instance + monitoring<br>
+          Premium features included<br>
+          Email + dashboard access
+        </td>
+        <td>$50/month or 10% of profits</td>
       </tr>
       <tr>
-        <td>Fully Managed</td>
-        <td>We host, maintain, and monitor your system<br>Includes dashboard access and priority support</td>
-        <td>$50/month or 10% profit share</td>
-      </tr>
-      <tr>
-        <td>Enterprise</td>
-        <td>Multi-account management<br>Custom strategy development and support</td>
+        <td>Pro / Institutional</td>
+        <td>
+          Multiple accounts<br>
+          Custom strategies<br>
+          Dedicated support
+        </td>
         <td>Custom pricing</td>
       </tr>
     </table>
   </section>
 
   <section class="section">
-    <h2>Monetization Options</h2>
-    <ul class="monetization-list">
-      <li>Monthly subscription plans for software access or managed hosting.</li>
-      <li>Profit-sharing model to align incentives—pay only when you profit.</li>
-      <li>One-time setup fee to cover initial configuration and training.</li>
-      <li>Custom consulting and strategy design for advanced traders and institutions.</li>
-    </ul>
-  </section>
-
-  <section class="section">
     <h2>How It Works</h2>
     <ol>
       <li>Connect your Alpaca account securely.</li>
-      <li>Configure basic preferences (or use presets).</li>
-      <li>Deploy locally or let us run it for you.</li>
-      <li>Track results while Aipachino works for you.</li>
+      <li>Set preferences or use built-in presets.</li>
+      <li>Deploy on your own device or let us host it.</li>
+      <li>Track results. Aipachino handles the rest.</li>
     </ol>
   </section>
 
   <section class="section">
-    <h2>Choose Your Setup</h2>
-    <ul>
-      <li><strong>Self-Hosted:</strong> You install and run Aipachino. One-time setup fee + low subscription.</li>
-      <li><strong>Fully Managed:</strong> We host and maintain the system. Monthly subscription or profit-share.</li>
+    <h2>Crypto Availability (U.S. States)</h2>
+    <p>
+      Aipachino supports crypto trading via Alpaca in the following U.S. states:
+    </p>
+    <ul class="feature-list">
+      <li>Alabama</li><li>Alaska</li><li>Arizona</li><li>Arkansas</li><li>California</li><li>Colorado</li>
+      <li>Connecticut</li><li>Delaware</li><li>Florida</li><li>Georgia</li><li>Idaho</li><li>Illinois</li>
+      <li>Indiana</li><li>Iowa</li><li>Kansas</li><li>Kentucky</li><li>Louisiana</li><li>Maine</li>
+      <li>Maryland</li><li>Massachusetts</li><li>Michigan</li><li>Minnesota</li><li>Mississippi</li><li>Missouri</li>
+      <li>Montana</li><li>Nebraska</li><li>Nevada</li><li>New Hampshire</li><li>New Jersey</li><li>New Mexico</li>
+      <li>North Carolina</li><li>North Dakota</li><li>Ohio</li><li>Oklahoma</li><li>Oregon</li><li>Pennsylvania</li>
+      <li>Rhode Island</li><li>South Carolina</li><li>South Dakota</li><li>Tennessee</li><li>Texas</li><li>Utah</li>
+      <li>Vermont</li><li>Virginia</li><li>Washington</li><li>West Virginia</li><li>Wisconsin</li><li>Wyoming</li>
     </ul>
+    <p>States not listed do not currently support Alpaca crypto trading.</p>
   </section>
 
-  <section class="section">
-    <h2>Performance</h2>
-    <p>In internal tests, Aipachino generates over $800/month per instance—with compounding returns designed to grow over time.</p>
-  </section>
-
-  <section class="faq" aria-label="Frequently Asked Questions">
+  <section class="faq">
     <h2>Frequently Asked Questions</h2>
-
     <div class="faq-item">
-      <div class="faq-question" tabindex="0">Who is Aipachino for?</div>
+      <div class="faq-question" tabindex="0">Is Aipachino beginner-friendly?</div>
       <div class="faq-answer">
-        Aipachino is designed for beginners and intermediate traders who want a stress-free, out-of-the-box trading experience for crypto and stocks. You just connect your account and provide a starting amount.
+        Yes. You can run with default settings or let us manage the setup for you. No coding required.
       </div>
     </div>
-
     <div class="faq-item">
-      <div class="faq-question" tabindex="0">What brokerages does Aipachino support?</div>
+      <div class="faq-question" tabindex="0">Can I make changes to the strategy?</div>
       <div class="faq-answer">
-        Currently, Aipachino connects securely to Alpaca for both stock and cryptocurrency trading within supported regions.
+        Yes. Self-hosted and Pro users can customize strategies directly. Managed users can request strategy presets.
       </div>
     </div>
-
     <div class="faq-item">
-      <div class="faq-question" tabindex="0">Are there equity or regional requirements?</div>
+      <div class="faq-question" tabindex="0">How do I start?</div>
       <div class="faq-answer">
-        Yes, Alpaca requires a minimum equity of $25,000 for stock trading in the U.S. market due to Pattern Day Trader rules. Crypto trading through Alpaca has different regional requirements; check your account eligibility accordingly.
+        Click "Book Setup" to get started. We’ll help you connect your brokerage and get trading.
       </div>
     </div>
-
     <div class="faq-item">
-      <div class="faq-question" tabindex="0">Does Aipachino manage risk?</div>
+      <div class="faq-question" tabindex="0">Is there a mobile app?</div>
       <div class="faq-answer">
-        Yes, the system has built-in risk management features including stop losses, profit-taking triggers, and filters based on asset volatility to protect your capital.
+        Not yet. You can view dashboards and alerts from your browser or email.
       </div>
     </div>
-
-    <div class="faq-item">
-      <div class="faq-question" tabindex="0">Can I customize strategies?</div>
-      <div class="faq-answer">
-        Basic preferences can be configured during setup. Advanced users can modify strategy parameters if self-hosting.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question" tabindex="0">Is my money safe?</div>
-      <div class="faq-answer">
-        Absolutely. Aipachino never holds or transfers your funds. All trades are executed via your brokerage account under your control.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question" tabindex="0">How do I get started?</div>
-      <div class="faq-answer">
-        Simply book a setup session or view a demo. Connect your Alpaca account and provide your initial investment amount. Aipachino takes care of the rest.
-      </div>
-    </div>
-
   </section>
 
   <section class="cta-buttons">
@@ -282,23 +257,15 @@
   </footer>
 
   <script>
-    // Simple FAQ toggle logic
-    document.querySelectorAll('.faq-question').forEach((question) => {
-      question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        const isActive = answer.classList.contains('active');
-        if (isActive) {
-          answer.classList.remove('active');
-          question.classList.remove('active');
-        } else {
-          answer.classList.add('active');
-          question.classList.add('active');
-        }
+    document.querySelectorAll('.faq-question').forEach((q) => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+        q.nextElementSibling.classList.toggle('active');
       });
-      question.addEventListener('keydown', (e) => {
+      q.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          question.click();
+          q.click();
         }
       });
     });
