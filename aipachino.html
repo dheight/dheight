@@ -3,119 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aipachino - Broker in a Box</title>
+  <title>Aipachino Trading Bot</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background-color: #262626;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #bbb;
-    }
-    main {
-      padding: 2rem 1rem;
+      font-family: sans-serif;
+      line-height: 1.6;
       max-width: 800px;
-      margin: auto;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    section {
-      margin-bottom: 2.5rem;
+    h1, h2 {
+      color: #2e2e2e;
     }
-    h2 {
-      color: #444;
-      margin-bottom: 1rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
+    .pricing, .disclaimer {
+      background: #f4f4f4;
       padding: 1rem;
-      background: #eee;
-      font-size: 0.9rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+    .tagline {
+      font-style: italic;
       color: #666;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Aipachino</h1>
-    <p>Broker in a Box — Brewed Just Right</p>
-  </header>
-  <main>
-    <section>
-      <h2>What is Aipachino?</h2>
-      <p>
-        Aipachino is an automated multi-asset trading system that intelligently buys and sells stocks and crypto on your behalf. It runs locally or remotely using your own Alpaca account — you maintain full control, while Aipachino works in the background.
-      </p>
-    </section>
+  <h1>Aipachino Trading Bot</h1>
+  <p class="tagline">"Brewed just right. Works while you don't. Broker in a box."</p>
 
-    <section>
-      <h2>Why Aipachino?</h2>
-      <ul>
-        <li>
-          <strong>Multi-Asset Intelligence:</strong> Stocks and crypto are traded differently — Aipachino knows that. It dynamically adjusts logic based on market type, hours, and volatility patterns.
-        </li>
-        <li>
-          <strong>Real Scoring Engine:</strong> It ranks assets using momentum, volatility, and recent price action — not just static indicators.
-        </li>
-        <li>
-          <strong>Secure Execution:</strong> No cloud keys. Aipachino runs wherever you want — Raspberry Pi, server, laptop — and doesn’t require giving up custody.
-        </li>
-        <li>
-          <strong>Actionable Logs:</strong> Every trade, score, and price peak is logged to local SQLite. Great for tweaking, auditing, or building dashboards.
-        </li>
-        <li>
-          <strong>Future-Proof:</strong> AI models can be layered in later. The foundation is modular — signal intelligence, alerts, and chat interfaces are all on the roadmap.
-        </li>
-        <li>
-          <strong>Human Touch:</strong> Unlike other bots, Aipachino offers customized deployment, tailored asset selection, and real support.
-        </li>
-        <li>
-          <strong>Brand That Stands Out:</strong> Aipachino brings performance with personality. It’s your “barista bot” for passive income — always brewing.
-        </li>
-      </ul>
-    </section>
+  <p><strong>Aipachino</strong> is a modular, automated trading system built to help users run active trading strategies on supported broker platforms. Designed for crypto and stock markets, it provides high-speed decision logic, custom indicators, and full local control for the user.</p>
 
-    <section>
-      <h2>How It Works</h2>
-      <ul>
-        <li>You create an Alpaca account (U.S. only).</li>
-        <li>You connect your API keys to Aipachino.</li>
-        <li>You set your rules or use defaults — then let it run.</li>
-        <li>You can monitor performance or let it handle everything hands-free.</li>
-      </ul>
-    </section>
+  <h2>Key Features</h2>
+  <ul>
+    <li>Runs on local or remote hardware</li>
+    <li>Compatible with Alpaca and other supported APIs</li>
+    <li>Fully automated buy/sell logic</li>
+    <li>Customizable indicators, thresholds, and symbols</li>
+    <li>Real-time logging and historical database</li>
+    <li>No third-party cloud services required</li>
+  </ul>
 
-    <section>
-      <h2>Coming Soon</h2>
-      <ul>
-        <li>Web dashboard with trade insights</li>
-        <li>AI-enhanced signal generation</li>
-        <li>Telegram + mobile alerts</li>
-        <li>Remote deployment options</li>
-      </ul>
-    </section>
-  </main>
+  <div class="pricing">
+    <h2>Pricing Models</h2>
+    <h3>Non-Hosted (You run the bot yourself)</h3>
+    <ul>
+      <li><strong>One-Time Setup Fee:</strong> $100 – includes installation, config, and onboarding</li>
+      <li><strong>Monthly Maintenance:</strong> $25/month – includes updates, bugfixes, and remote check-ins</li>
+      <li><strong>Performance-Based Option:</strong> 10% of net realized profit (monthly, honor system)</li>
+    </ul>
 
-  <footer>
-    &copy; 2025 Aipachino. All rights reserved.
-  </footer>
+    <h3>Hosted (We run the bot for you)</h3>
+    <ul>
+      <li><strong>Setup & Onboarding:</strong> $150 one-time – includes full config and testing</li>
+      <li><strong>Hosting + Support:</strong> $50/month – includes uptime, logging access, and restarts</li>
+      <li><strong>Performance-Based Option:</strong> 20% of net realized profit (monthly, invoiced)</li>
+    </ul>
+
+    <p>Pricing tiers are flexible. You can mix-and-match flat fees and profit-sharing models based on your comfort and usage level.</p>
+  </div>
+
+  <h2>Access & Monitoring</h2>
+  <ul>
+    <li>You retain full ownership of your brokerage account and credentials</li>
+    <li>Secure logging, configuration, and status tracking provided</li>
+    <li>Monitoring tools available to verify activity and execution</li>
+  </ul>
+
+  <div class="disclaimer">
+    <h2>Support Scope</h2>
+    <p>Support is limited to installation, configuration, and running of the service. We do <strong>not</strong> offer financial advice, make investment decisions, or guarantee performance. All trading activity is the responsibility of the account owner.</p>
+  </div>
+
+  <p>To get started, request setup via the main site contact page.</p>
 </body>
 </html>
