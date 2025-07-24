@@ -1,115 +1,165 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aipachino – Algorithmic Trading System</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aipachino – Automatic Trading System</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: system-ui, sans-serif;
       margin: 0;
-      background-color: #f4f4f7;
-      color: #222;
+      padding: 0;
+      background-color: #f5f6fa;
+      color: #2f3640;
     }
     header {
-      background: #121212;
-      color: #fff;
-      padding: 2rem;
+      background: #273c75;
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    h1 {
-      font-size: 2.75rem;
+    header h1 {
       margin: 0;
+      font-size: 2.5rem;
     }
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 2rem;
-      color: #111;
+    header h2 {
+      margin: 0.5rem 0 0;
+      font-size: 1.25rem;
+      font-weight: normal;
     }
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    section {
+    .container {
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+    h3 {
+      border-bottom: 2px solid #dcdde1;
+      padding-bottom: 0.5rem;
+      margin-top: 3rem;
+    }
     .pricing-table {
-      width: 100%;
-      border-collapse: collapse;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
       margin-top: 1rem;
     }
-    .pricing-table th, .pricing-table td {
-      border: 1px solid #ccc;
-      padding: 0.75rem;
-      text-align: left;
+    .pricing-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .tip {
-      font-style: italic;
-      color: #666;
-      margin-top: 0.5rem;
+    .pricing-card h4 {
+      margin-top: 0;
+      color: #192a56;
     }
-    .footer {
-      text-align: center;
-      padding: 1rem;
-      color: #777;
+    ul {
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #718093;
+      margin-top: 1rem;
+    }
+    .section {
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Aipachino</h1>
-    <p>Broker in a box. Brewed just right. Works while you don't.</p>
-  </header>  <section>
-    <h2>Recurring Subscription (SaaS-style)</h2>
-    <p><strong>Best for:</strong> Retail clients who want ongoing service.</p>
-    <table class="pricing-table">
-      <tr><th>Plan</th><th>Features</th><th>Monthly Price (USD)</th></tr>
-      <tr><td>Basic</td><td>One asset, limited trades/day, no dashboard</td><td>$30–50</td></tr>
-      <tr><td>Standard</td><td>Multi-asset support, logs, reporting</td><td>$75–150</td></tr>
-      <tr><td>Pro</td><td>Custom config, alerts, dashboard</td><td>$200–500</td></tr>
-    </table>
-    <p class="tip">Tip: Offer quarterly discounts (e.g., 3 months for 2.5x monthly rate).</p><h2>Performance-Based Fee (Profit Share)</h2>
-<p><strong>Best for:</strong> Clients with capital, willing to pay based on returns.</p>
-<p>20% of realized monthly profits, after crossing a “high water mark.”</p>
-<p>Example: If a $1,000 account grows to $1,150, your cut is 20% of the $150 gain = $30.</p>
-<p>If it later drops to $1,130, you don’t get paid again until profits exceed $1,150.</p>
-<p class="tip">Tip: Use Stripe, PayPal subscriptions, or crypto wallets to automate this.</p>
+    <h1>Automatic Trading System</h1>
+    <h2>Algorithms Included, Brewed Just Right.</h2>
+  </header>
 
-<h2>One-Time Setup Fee</h2>
-<p><strong>Best for:</strong> Clients who want to self-host or want a personal version.</p>
-<p>$300–1,000 flat depending on:</p>
-<ul>
-  <li>Hosting requirements</li>
-  <li>Custom strategy tuning</li>
-  <li>Hardware configuration</li>
-  <li>Documentation + training</li>
-</ul>
-<p class="tip">Includes 1-month support. Ongoing maintenance available (e.g., $50/month).</p>
+  <div class="container">
+    <p>
+      Aipachino is a hands-off trading system built for people who want to start trading crypto or stocks, but feel overwhelmed by the complexity. 
+      If you’ve ever felt confused by charts, indicators, exchanges, or the endless YouTube advice — this platform was made for you.
+    </p>
 
-<h2>Hardware Lease/Sale (If Provided)</h2>
-<p><strong>Best for:</strong> Plug-and-play packages</p>
-<table class="pricing-table">
-  <tr><th>Option</th><th>Fee</th></tr>
-  <tr><td>Lease Raspberry Pi setup</td><td>$20–40/month</td></tr>
-  <tr><td>Sell preconfigured device</td><td>$200–350/unit</td></tr>
-</table>
-<p class="tip">Add shipping, optional router config, UPS battery, etc. for extra value.</p>
+    <p>
+      Aipachino removes all the friction. You connect your brokerage account, choose your starting amount, and the system begins trading immediately. 
+      It’s fully configured, tuned, and running out-of-the-box — no code, no setups, no stress.
+    </p>
 
-<h2>Add-on Services</h2>
-<table class="pricing-table">
-  <tr><th>Service</th><th>Rate</th></tr>
-  <tr><td>Backtest custom strategy</td><td>$50–100/run</td></tr>
-  <tr><td>Strategy customization</td><td>$100–500/project</td></tr>
-  <tr><td>Data hosting or dashboards</td><td>$15–50/month</td></tr>
-  <tr><td>Personal coaching or onboarding</td><td>$75–150/hour</td></tr>
-</table>
+    <p>
+      Designed to work while you don’t, Aipachino analyzes the markets, places trades, tracks performance, and continuously adapts using proven rules.
+      All activity is logged, stored, and viewable — and you're always in control.
+    </p>
 
+    <div class="section">
+      <h3>Pricing Options</h3>
 
+      <h4>1. Subscription-Based Plans</h4>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <h4>Basic</h4>
+          <ul>
+            <li>Single asset</li>
+            <li>Limited trades/day</li>
+            <li>No dashboard access</li>
+          </ul>
+          <strong>$30–50 / month</strong>
+        </div>
+        <div class="pricing-card">
+          <h4>Standard</h4>
+          <ul>
+            <li>Multi-asset trading</li>
+            <li>Trade logs + summaries</li>
+            <li>Performance reporting</li>
+          </ul>
+          <strong>$75–150 / month</strong>
+        </div>
+        <div class="pricing-card">
+          <h4>Pro</h4>
+          <ul>
+            <li>Custom configuration</li>
+            <li>Real-time alerts</li>
+            <li>Dashboard access</li>
+          </ul>
+          <strong>$200–500 / month</strong>
+        </div>
+      </div>
+      <p class="note">Quarterly discounts available (3 months for 2.5× monthly rate)</p>
 
-  </section>  <div class="footer">
-    <p>&copy; 2025 Aipachino. All rights reserved.</p>
+      <h4>2. Performance-Based (Profit Share)</h4>
+      <ul>
+        <li>20% of monthly realized profits</li>
+        <li>Paid only after a high water mark is passed</li>
+        <li>No charge if performance doesn't beat prior highs</li>
+      </ul>
+      <p class="note">Example: If your account grows from $1,000 → $1,150, we earn 20% of the $150 gain = $30.</p>
+
+      <h4>3. One-Time Setup (Self-Hosted)</h4>
+      <ul>
+        <li>Includes full install + configuration</li>
+        <li>Supports your system or cloud VM</li>
+        <li>1-month support period</li>
+      </ul>
+      <strong>$300–1,000 flat</strong>
+      <p class="note">Ongoing support: $50/month optional</p>
+
+      <h4>4. Plug-and-Play Devices (Optional)</h4>
+      <ul>
+        <li>Lease preconfigured Raspberry Pi: $20–40 / month</li>
+        <li>Purchase configured device: $200–350</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Support Policy</h3>
+      <p>
+        Support includes installation, setup, and ensuring the system runs smoothly.
+        We do not provide financial advice or guarantee trading performance.
+        You are responsible for your brokerage account and any trading decisions made by the system.
+      </p>
+    </div>
   </div>
+
 </body>
 </html>
