@@ -1,155 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aipachino – Algorithmic Trading in a Box</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Inter',sans-serif; margin: 0; background: #f4f4f4; color: #222; }
-    header { background: #1e1e2f; color: white; padding: 3rem 1rem; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { font-size: 1.2rem; margin-top: .5rem; color: #ccc; }
-    .section { padding: 2rem 1rem; max-width: 900px; margin: auto; }
-    .section h2 { font-size: 1.8rem; margin-bottom: 1rem; }
-    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-    th, td { border: 1px solid #ddd; padding: .75rem; text-align: left; }
-    ul { list-style: disc; margin-left: 1.5rem; }
-    .cta-buttons { text-align: center; margin: 3rem 0; }
-    .cta-buttons a { text-decoration: none; background: #1e1e2f; color: white; padding: 1rem 2rem; margin: 0 1rem; border-radius: 8px; font-weight:600; }
-    footer { background: #1e1e2f; color: #aaa; text-align: center; padding: 2rem 1rem; font-size: .9rem; }
-    .faq { max-width: 900px; margin: 2rem auto 4rem; padding: 0 1rem; }
-    .faq-question { font-weight:700; cursor:pointer; position:relative; padding-right:20px; }
-    .faq-question::after { content:'+'; position:absolute; right:0; top:0; transition: transform .3s ease; }
-    .faq-question.active::after { content:'–'; transform:rotate(180deg); }
-    .faq-answer { margin-top:.5rem; display:none; color:#444; }
-    .faq-answer.active { display:block; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aipachino</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <header>
+        <h1>Aipachino</h1>
+        <p>Algorithmic Trading System, Brewed Just Right</p>
+    </header>
 
-  <header>
-    <h1>Aipachino</h1>
-    <p>Algorithmic Trading in a Box. Brewed just right. Works while you don't.</p>
-  </header>
+    <section id="what-is">
+        <h2>What is Aipachino?</h2>
+        <p>Aipachino is a beginner-friendly algorithmic trading system that works while you don't. Connect your brokerage account, set your starting balance, and the platform handles setup, analysis, and trade execution automatically—across both crypto and stocks.</p>
+    </section>
 
-  <section class="section">
-    <h2>What is Aipachino?</h2>
-    <p>Aipachino is an algorithmic trading system linked to your brokerage account that executes trades based on tested strategies. You remain in control—Aipachino does the work.</p>
-  </section>
+    <section id="features">
+        <h2>Included Features</h2>
+        <ul>
+            <li>Real-time asset scanning</li>
+            <li>Live trading signals for crypto and stocks</li>
+            <li>Backtesting engine</li>
+            <li>Strategy optimization tools</li>
+            <li>Profit tracking dashboard</li>
+            <li>Risk-managed trade execution</li>
+            <li>Trailing stop-loss and dynamic take-profit logic</li>
+            <li>Mobile-friendly interface</li>
+            <li>No coding required</li>
+        </ul>
+    </section>
 
-  <section class="section">
-    <h2>Why Choose Aipachino?</h2>
-    <table>
-      <tr><th>Feature</th><th>Benefit</th></tr>
-      <tr><td>Multi‑asset trading</td><td>Crypto and stocks, one system</td></tr>
-      <tr><td>Flexible hosting</td><td>Run it yourself or let us manage it</td></tr>
-      <tr><td>Smart strategy engine</td><td>Uses volatility, momentum, price-action analysis</td></tr>
-      <tr><td>Risk controls</td><td>Stop loss, take profit, cooldowns and filters</td></tr>
-      <tr><td>Compounding logic</td><td>Automatically reinvest profits</td></tr>
-    </table>
-  </section>
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <ul>
+            <li><strong>Free Tier:</strong> Simulated trading, basic performance tracking, and limited asset scanning</li>
+            <li><strong>Standard Tier:</strong> Full real-time trading, backtesting tools, strategy configuration, and priority support</li>
+            <li><strong>Pro Tier:</strong> Adds multiple strategy slots, deeper historical analysis, advanced volatility indicators, and custom strategy modules</li>
+        </ul>
+    </section>
 
-  <section class="section">
-    <h2>Included in All Plans</h2>
-    <ul>
-      <li>Secure Alpaca integration</li>
-      <li>Risk management rules built-in</li>
-      <li>Live trade execution engine</li>
-      <li>Basic configuration presets</li>
-      <li>Automated position sizing</li>
-    </ul>
-  </section>
+    <section id="faq">
+        <h2>FAQ</h2>
 
-  <section class="section">
-    <h2>Premium Features (Managed or Pro Plans)</h2>
-    <ul>
-      <li>Visual performance dashboard</li>
-      <li>Historical backtesting</li>
-      <li>Prebuilt and custom strategy library</li>
-      <li>Advanced rule customization</li>
-      <li>Multi‑strategy support</li>
-      <li>Smart alerts & daily summaries</li>
-      <li>Trade journal with tagging</li>
-      <li>Priority onboarding & support</li>
-    </ul>
-  </section>
+        <h3>Where can I legally trade crypto with Aipachino?</h3>
+        <p>Cryptocurrency trading through Alpaca is supported in the following U.S. states and territories:</p>
+        <p>
+            Arizona, California, Connecticut, Georgia, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Maryland, Massachusetts, Michigan, Mississippi, Missouri, Montana, Nebraska, North Carolina, North Dakota, Ohio, Rhode Island, South Carolina, South Dakota, Utah, Vermont, Washington, West Virginia.
+        </p>
 
-  <section class="section">
-    <h2>Pricing</h2>
-    <table>
-      <tr><th>Plan</th><th>Includes</th><th>Cost (USD)</th></tr>
-      <tr><td>Starter (Self‑Hosted)</td><td>Core engine + basic features<br>Community support</td><td>$150 setup + $25/month</td></tr>
-      <tr><td>Managed</td><td>All premium features<br>Hosted + monitoring<br>Email + dashboard access</td><td>$50/month or 10% profit share</td></tr>
-      <tr><td>Pro</td><td>Premium features + custom support and onboarding</td><td>Custom pricing</td></tr>
-    </table>
-  </section>
+        <h3>What do I need to get started?</h3>
+        <p>An Alpaca brokerage account, a funded balance (at least $10 recommended), and access to a web browser. You do not need trading experience.</p>
 
-  <section class="section">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Securely connect your Alpaca account</li>
-      <li>Set preferences or use presets</li>
-      <li>Deploy on your own hardware or use our managed hosting</li>
-      <li>Monitor results while Aipachino executes trades</li>
-    </ol>
-  </section>
+        <h3>Is there a minimum account size?</h3>
+        <p>No strict minimum, but accounts under $25,000 may be subject to PDT rules for stocks. Crypto trades are not subject to PDT restrictions.</p>
 
-  <section class="section">
-    <h2>Crypto Trading—U.S. State Availability</h2>
-    <p>Crypto trading via Alpaca is currently available in these U.S. states:</p>
-    <ul>
-      <li>Arizona</li><li>California</li><li>Connecticut</li><li>Georgia</li><li>Idaho</li><li>Illinois</li>
-      <li>Indiana</li><li>Iowa</li><li>Kansas</li><li>Kentucky</li><li>Maine</li><li>Maryland</li>
-      <li>Massachusetts</li><li>Michigan</li><li>Mississippi</li><li>Missouri</li><li>Montana</li><li>Nebraska</li>
-      <li>North Carolina</li><li>North Dakota</li><li>Ohio</li><li>Rhode Island</li><li>South Carolina</li><li>South Dakota</li>
-      <li>Utah</li><li>Vermont</li><li>Washington</li><li>West Virginia</li><li>Wisconsin</li><li>Wyoming</li>
-    </ul>
-    <p>Crypto is <strong>not available in New York</strong>. ([alpaca.markets June&nbsp;23, 2025])</p>
-  </section>
+        <h3>Does Aipachino work on mobile?</h3>
+        <p>Yes, the interface is mobile-friendly. Full dashboard support is included on all modern mobile browsers.</p>
 
-  <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <div class="faq-question" tabindex="0">Is Aipachino easy for beginners?</div>
-      <div class="faq-answer">Yes — use default settings or choose managed setup, no coding required.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question" tabindex="0">Can I tweak strategies?</div>
-      <div class="faq-answer">Yes — self-hosted and Pro users can customize strategies. Managed users request presets.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question" tabindex="0">How do I start?</div>
-      <div class="faq-answer">Click “Book Setup” – we’ll guide you connecting your brokerage to start trading.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question" tabindex="0">Is there an app?</div>
-      <div class="faq-answer">No app yet. Dashboards and alerts are browser‑based or via email.</div>
-    </div>
-  </section>
+        <h3>Can I paper trade before going live?</h3>
+        <p>Yes. The Free Tier supports full simulation mode with real market data for practice and testing.</p>
 
-  <section class="cta-buttons">
-    <a href="#">Book Setup</a>
-    <a href="#">View Demo</a>
-    <a href="#">Contact Us</a>
-  </section>
+        <h3>What exchanges are supported?</h3>
+        <p>All trades are routed through Alpaca. Stocks are traded on U.S. exchanges, while crypto is routed via Alpaca Crypto LLC.</p>
 
-  <footer>
-    &copy; 2025 Aipachino. All rights reserved.<br>
-    Built for traders. Brewed just right.
-  </footer>
+        <h3>Are there any hidden fees?</h3>
+        <p>No hidden fees. Platform charges are transparent and listed in the pricing section. Alpaca may charge standard regulatory fees on stock trades.</p>
 
-  <script>
-    document.querySelectorAll('.faq-question').forEach(q => {
-      q.addEventListener('click', () => {
-        q.classList.toggle('active');
-        q.nextElementSibling.classList.toggle('active');
-      });
-      q.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
-      });
-    });
-  </script>
+        <h3>What happens if a sell order doesn't fill?</h3>
+        <p>Unfilled sell orders are canceled after a timeout, and the system tracks the asset to attempt a new exit if conditions improve. No fees are charged for canceled orders.</p>
 
+        <h3>Do I have full control over my account?</h3>
+        <p>Yes. You can disconnect Aipachino, withdraw funds, or pause trading anytime from your Alpaca account settings.</p>
+
+        <h3>Is my data safe?</h3>
+        <p>Yes. We do not store your brokerage credentials. All communications use secure APIs and encryption.</p>
+
+        <h3>How often does Aipachino trade?</h3>
+        <p>Trades occur based on real-time market signals and risk parameters, usually multiple times per day depending on market conditions.</p>
+
+        <h3>Can I customize strategies?</h3>
+        <p>Yes, the Standard and Pro Tiers include strategy optimization and configuration tools.</p>
+
+        <h3>What happens if I want to stop?</h3>
+        <p>You can disconnect your account at any time and withdraw funds. There are no penalties or lock-in periods.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aipachino. All rights reserved.</p>
+    </footer>
 </body>
 </html>
